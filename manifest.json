@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Keynav",
+  "version": "0.1",
+
+  "description": "Allows interaction of page elements by typing keys instead of having to click on them",
+
+  "icons": {
+    "48": "icons/keynav-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["keynav.js"]
+    }
+  ]
+}
